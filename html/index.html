@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>My Website</title>
+		<meta name="description" content="">
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Bootstrap CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="../css/styles.css" rel="stylesheet">
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="../js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+
+	<body>
+
+	<div class="container" id="main">
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="/"><img src="../images/paw.png" alt="Your logo" /><strong> Teach Cubs</strong></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="portfolio.html">Portfolio</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Services<strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								 <li>
+								 		<a href="#">Pet Training</a>
+								 </li>
+								 <li>
+								 		<a href="#">Pet Rescue</a>
+								 </li>
+								 <li>
+								 		<a href="#">Pedigree</a>
+								 </li>
+								 <li class="divider"></li>
+
+								 <li class="dropdown-header">More Services</li>
+								 <li>
+								 		<a href="#">Kennels</a>
+								 </li>
+								 <li>
+								 		<a href="#">Pet Toys</a>
+								 </li>
+							</ul><!--end dropdown-menu -->
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+					</ul>
+
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form><!-- end navbar-form -->
+
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-user"> My Account<strong class="caret"></strong></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+								</li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update profile</a>
+								</li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- end nav pull-right -->
+
+				</div><!-- nav-collapse -->
+			</div><!-- end container -->
+		</div><!-- end navbar -->
+
+
+		<div class="carousel slide" id="myCarousel">
+
+			<!-- indicatores -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to ="0" data-target="#myCarousel"></li>
+				<li data-slide-to ="1" data-target="#myCarousel"></li>
+				<li  data-slide-to ="2" data-target="#myCarousel"></li>
+			</ol>
+
+			<!-- wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Grooming</h4>
+						<p>
+							Make your pet a star performer.
+						</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Training</h4>
+						<p>
+							Make your pet do what you say.
+						</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Adoption</h4>
+						<p>
+							Adopt a pet to your family.
+						</p>
+					</div>
+				</div>
+			</div><!-- carousel inner -->
+
+		<!-- Controls -->
+		<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"
+		></span></a>
+		<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"
+		></span></a>
+
+		</div><!-- end myCarousel -->
+
+		<div class="row" id="bigCallout">
+
+				<div class="col-12">
+
+					<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						<h4>Success!</h4>
+						<p>
+							You just ordered a Guidebook. Click X at the top right to close this window.
+						</p>
+					</div><!-- end alert -->
+
+
+					<!-- visible only on small devices -->
+					<div class="well well-small visible-sm">
+						<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"> Give us a call</span></a>
+					</div> <!-- end well-small -->
+
+					<div class="well">
+						<div class="page-header">
+							<h1>Best behaviour and performance</h1>
+							<blockquote>
+								<p> - Choose from a wide array of Options for your best matched Customizations</p>
+							</blockquote>
+							<p class="lead">
+								Guide book
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href='' class="btn btn-large btn-primary" id="alertMe">Get Now</a>
+						</div><!-- end page-header -->
+					</div><!-- end well -->
+				</div><!-- end col-12 -->
+
+		</div><!-- end row -->
+
+
+		<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h2>Our Work</h2>
+			</div>
+		</div><!-- end row -->
+
+
+		<div class="row features" >
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Why choose us</h3>
+						</div><!-- end panel-heading -->
+						<img src="../images/whychooseus.jpg" alt="whychooseus" class="img-rounded img-responsive thumbnail"/>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<a href="http://www.google.com" target="_blank"
+						class="btn btn-warning btn-block">
+							Know more
+						</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Our Mission</h3>
+						</div><!-- end panel-heading -->
+						<img src="../images/petTraining.jpg" alt="petTraining" class="img-rounded thumbnail img-responsive"/>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<a href="http://www.google.com" target="_blank"
+						class="btn btn-danger btn-block">
+							Know more
+						</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">What we do</h3>
+						</div><!-- end panel-heading -->
+						<img src="../images/whatwedo.jpg" alt="whatwedo" class="img-rounded thumbnail img-responsive"/>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<a href="http://www.google.com" target="_blank"
+						 class="btn btn-info btn-block">
+							Know more
+						</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+		</div><!-- end features -->
+
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h3>Users Speak</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<h4>Our trusted customers' voice</h4>
+				<div class="list-group">
+					<div class="tabbable">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"> Kate </h4>
+							<img src="../images/avatar-7.png" class="thumbnail pull-left"/>
+							<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"> Kumar </h4>
+							<img src="../images/avatar-5.png" class="thumbnail pull-left"/>
+							<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</a>
+					</div><!-- end tabbable -->
+				</div><!--end list-group -->
+			</div><!-- end col-sm-6 -->
+
+
+			<div class="col-sm-6">
+				<h3>Find us here</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Near you</a></li>
+						<li><a href="#tab2" data-toggle="tab">Our headquarters</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4> <span class="glyphicon glyphicon-map-marker"></span> Our Location <small>More like our favourite surf spot</small> </h4>
+
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.8221667201732!2d77.59056064955071!3d13.017280497175554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xd38a2da1a3bdff60!2sEuroKids+R.T.+Nagar%2C+Bangalore!5e0!3m2!1sen!2sin!4v1453956579715" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+
+						</div><!-- end tab-pane -->
+
+						<div class="tab-pane" id="tab2">
+							<h4> <span class="glyphicon glyphicon-map-marker"></span> Our headquarters <small>More like our stronghold</small> </h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.8221667201732!2d77.59056064955071!3d13.017280497175554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xd38a2da1a3bdff60!2sEuroKids+R.T.+Nagar%2C+Bangalore!5e0!3m2!1sen!2sin!4v1453956579715" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+
+							<hr>
+
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
+								<span class="glyphicon glyphicon-hand-up"> Click here for us to contact you</span>
+							</a>
+
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											<h4>We'll contact you</h4>
+										</div><!-- end modal-header -->
+										<div class="modal-body">
+											<p>
+												<small class="text-muted">
+													Fill your details here
+												</small>
+											</p>
+
+											<form  class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName" placeholder="Name" type="text">
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Message</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage" rows="3" placeholder="Message"></textarea>
+														<button class="btn btn-success pull-right" type="submit">Send!</button>
+													</div>
+												</div>
+											</form>
+
+										</div><!-- end modal-body -->
+
+										<div class="modal-footer">
+											<button class="btn btn-default" data-dismiss="modal" type="button">
+												close
+											</button>
+											<button class="btn btn-primary" type="button">Save Changes</button>
+										</div>
+
+									</div><!-- end modal-content -->
+								</div><!-- end modal-dialog -->
+							</div><!-- End modal with id - myModal -->
+
+						</div><!-- end tab-pane -->
+					</div><!-- end tab-content-->
+				</div><!-- end tabbable -->
+			</div><!-- end col-sm-6 -->
+
+		</div> <!-- end more info -->
+
+	<hr>
+
+		<div class="insight">
+
+			<div class="row">
+				<div class="col-12">
+					<h3>Statistics</h3>
+				</div><!-- end col-12 -->
+			</div><!-- end row -->
+
+			<div class="row">
+				<div class="col-sm-4">
+					<img class="img-responsive graphs" src="../images/pie.png" alt="Powerful insights"/>
+				</div><!-- end col-6 -->
+				<div class="col-sm-8">
+					<div class="caption">
+						<h3>Powerful insights to help grow your Pets</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p>
+							<a href="http://www.mangareader.net" class="btn btn-link btn-small" target="_blank">Learn More</a>
+						</p>
+					</div><!-- end caption -->
+				</div><!-- end col-6 -->
+			</div>
+			<hr>
+			<div class="row">
+
+				<div class="col-sm-8">
+					<div class="caption">
+						<h3>Advanced performance statistics.</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p>
+							<a href="http://www.mangareader.net" class="btn btn-link btn-small" target="_blank">Learn More</a>
+						</p>
+					</div><!-- end caption -->
+				</div><!-- end col-6 -->
+
+				<div class="col-sm-4">
+						<img class="img-responsive graphs" src="../images/spider.png" alt="Advanced performance"/>
+				</div><!-- end col-6 -->
+			</div>
+
+		</div><!-- end insight -->
+
+	</div><!-- end container -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>Copyright &copy;2016{name}</h6>
+				</div><!-- end col-sm-2 -->
+				<div class="col-sm-4">
+					<h6>About us</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="">Home</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Links</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+				<div class="col-sm-2">
+					<h6>Social</h6>
+					<ul class="unstyled">
+						<li><a href="">twitter</a></li>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Google Plus</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+				<div class="col-sm-2">
+					<h6>Powered by Bootstrap </h6>
+				</div><!-- end col-sm-2 -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</footer>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="../js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="../js/script.js"></script>
+
+	</body>
+</html>
