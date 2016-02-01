@@ -12,8 +12,23 @@
 		<link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
 		<!-- Custom CSS -->
 		<link href="../css/styles.css" rel="stylesheet">
-		<!-- Include Modernizr in the head, before any other Javascript -->
+
+		<!-- Include Modernizr in the head, before any other Javascript .
+		Modernizr is a JavaScript library which is designed to detect HTML5 and CSS3
+		features in various browsers, which lets JavaScript avoid using unimplemented
+		features or use a workaround such as a shim to emulate them. -->
 		<script src="../js/modernizr-2.6.2.min.js"></script>
+
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap JS -->
+		<script src="../js/bootstrap.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="../js/script.js"></script>
 
 	</head>
 
@@ -29,7 +44,7 @@
 						<span class="icon-bar"></span>
 				</button>
 
-				<a class="navbar-brand" href="/"><img src="../images/paw.png" alt="Your logo" /><strong> Teach Cubs</strong></a>
+				<a class="navbar-brand" href="#"><img src="../images/paw.png" alt="Teach Cubs" /><strong> Teach Cubs</strong></a>
 				<div class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav">
 						<li class="active">
@@ -451,16 +466,16 @@
 	<!-- All Javascript at the bottom of the page for faster page loading -->
 
 	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
+<!--	<script src="http://code.jquery.com/jquery.js"></script> -->
 
 	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script>
+<!--	<script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script> -->
 
 	<!-- Bootstrap JS -->
-	<script src="../js/bootstrap.min.js"></script>
+<!--	<script src="../js/bootstrap.min.js"></script> -->
 
 	<!-- Custom JS -->
-	<script src="../js/script.js"></script>
+<!--	<script src="../js/script.js"></script> -->
 
 	</body>
 </html>

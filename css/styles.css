@@ -163,6 +163,14 @@ footer a{
   /*.graphs{
     margin: auto;
   }*/
+
+  .modal-body {
+    max-height: 370px;
+    padding: 15px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+ }
+
 }
 
 /* Landscape phone to portrait tablet */
